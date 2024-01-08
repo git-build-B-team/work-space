@@ -1,0 +1,188 @@
+body {
+    margin: 0;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    background-color: rgba(206, 181, 173, 1);
+    flex-wrap: wrap;
+}
+
+a {
+    text-decoration: none;
+    color: rgba(80, 80, 80, 1);
+}
+
+ul {
+    display: flex;
+}
+
+li {
+    list-style: none;
+    margin-right: 2rem;
+}
+
+.logo {
+    width: 7rem;
+}
+
+#nav {
+    margin: auto 0;
+}
+
+
+.title {
+    text-align: center;
+}
+
+.item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    margin: 20px;
+}
+
+.item::after {
+    content: '';
+    width: 100%;
+}
+
+.card:nth-child(n+4){
+    order: 1;
+}
+
+.item::before {
+    content: '';
+    order: 2;
+    width: 100%;
+}
+
+.card:nth-child(n+7){
+    order: 2;
+}
+
+
+.card img {
+    width: 15rem;
+}
+
+/* SP */
+@media screen and (max-width: 960px) {
+
+    /* ハンバーガー目ニュー */
+    #nav{
+        /*position:fixed;にし、z-indexの数値を大きくして前面へ*/
+        position:fixed;
+        z-index: 999;
+        /*ナビのスタート位置と形状*/
+        top:0;
+        right: -120%;
+        width:30%;
+        height: 70%;
+        background:#999;
+        /*動き*/
+        transition: all 0.6s;
+        opacity: 0.9;
+    }
+    
+    #nav.panelactive{
+        right: 0;
+    }
+    
+    /*ナビゲーション*/
+    #nav ul {
+        /*ナビゲーション天地中央揃え*/
+        position: absolute;
+        z-index: 999;
+        top:50%;
+        left:50%;
+        transform: translate(-50%,-50%);
+        flex-direction: column;
+    }
+    
+    /*リストのレイアウト設定*/
+    
+    #nav li{
+        list-style: none;
+        text-align: center;
+    }
+    
+    #nav li {
+        color: #ffffff;
+        padding:15px;
+        display: block;
+        letter-spacing: 0.1em;
+        font-weight: bold;
+    }
+    
+    /*========= ボタンのためのCSS ===============*/
+    .openbtn{
+        position:fixed;
+        z-index: 9999;/*ボタンを最前面に*/
+        top:10px;
+        right: 10px;
+        cursor: pointer;
+        width: 60px;
+        height:50px;
+        top:25px;
+    }
+        
+    /*×に変化*/	
+    .openbtn span{
+        display: inline-block;
+        transition: all .4s;
+        position: absolute;
+        left: 14px;
+        height: 3px;
+        border-radius: 2px;
+        background-color: #666;
+          width: 45%;
+      }
+    
+    .openbtn span:nth-of-type(1) {
+        top:15px;	
+    }
+    
+    .openbtn span:nth-of-type(2) {
+        top:23px;
+    }
+    
+    .openbtn span:nth-of-type(3) {
+        top:31px;
+    }
+    
+    .openbtn.active span:nth-of-type(1) {
+        top: 18px;
+        left: 18px;
+        transform: translateY(6px) rotate(-45deg);
+        width: 30%;
+    }
+    
+    .openbtn.active span:nth-of-type(2) {
+        opacity: 0;
+    }
+    
+    .openbtn.active span:nth-of-type(3){
+        top: 30px;
+        left: 18px;
+        transform: translateY(-6px) rotate(45deg);
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 960px) {
+
+    .item {
+        
+        flex-direction: column;
+    }
+
+    .card{
+        margin: 0 auto;
+    }
+}
