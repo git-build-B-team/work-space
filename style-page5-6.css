@@ -1,0 +1,312 @@
+/* 共通 */
+* {
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: rgba(80, 80, 80, 1);
+}
+
+ul {
+  display: flex;
+}
+
+li {
+  list-style: none;
+  margin-right: 2rem;
+}
+
+h1 {
+  color: rgba(80, 80, 80, 1);
+}
+
+h2 {
+  color: rgba(80, 80, 80, 1);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+/* PC用 */
+@media screen and (min-width: 769px) {
+  /* page5 */
+  /* ヘッダー */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    background-color: rgba(206, 181, 173, 1);
+  }
+
+  .logo {
+    width: 7rem;
+  }
+
+  .nav {
+    margin: auto 0;
+  }
+
+  /* タイトル */
+  .contents-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 0 20px 0;
+  }
+
+  /* 商品情報セクション */
+  .marchandise-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .marchandise-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(206, 181, 173, 1);
+    margin: 10px 0;
+    width: 80%;
+    height: 150px;
+  }
+
+  .release-date {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 35%;
+    height: 130px;
+  }
+
+  .marchandise-img {
+    display: flex;
+    justify-content: center;
+    width: auto;
+    height: 140px;
+  }
+
+  .marchandise-name {
+    display: flex;
+    justify-content: center;
+    width: 35%;
+  }
+
+  /* ページャー */
+  .Pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: scale(0.8, 0.8);
+  }
+  .Pagination-Item-Link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 45px;
+    height: 45px;
+    background: #fff;
+    border: solid 2px rgba(80, 80, 80, 1);
+    font-size: 14px;
+    color: rgba(80, 80, 80, 1);
+    font-weight: bold;
+    transition: all 0.15s linear;
+  }
+  .Pagination-Item-Link-Icon {
+    width: 20px;
+  }
+  .Pagination-Item-Link.isActive {
+    background: #111;
+    color: #fff;
+    pointer-events: none;
+  }
+  .Pagination-Item-Link:not(.isActive):hover {
+    background: #111;
+    color: #fff;
+  }
+  .Pagination > * + * {
+    margin-left: 12px;
+  }
+
+  /* page6 */
+  .marchandise-img-section {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0 20px 0;
+  }
+
+  .menu-description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    background-color: rgba(206, 181, 173, 1);
+    margin-top: 20px;
+    border-radius: 10px;
+  }
+
+  .menu-description-title {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 95%;
+    height: auto;
+    margin: 30px 0 10px 0;
+  }
+
+  .menu-text {
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    line-height: 40px;
+    margin-bottom: 30px;
+  }
+}
+
+/* SP用 */
+@media screen and (max-width: 768px) {
+  /* page5 */
+  /* ヘッダー */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    background-color: rgba(206, 181, 173, 1);
+  }
+
+  .logo {
+    width: 7rem;
+  }
+
+  .nav {
+    margin: auto 0;
+  }
+
+  /* タイトル */
+  .contents-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+  }
+
+  /* 商品情報セクション */
+  .marchandise-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .marchandise-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(206, 181, 173, 1);
+    margin: 15px 0;
+    width: 80%;
+  }
+
+  .release-date {
+    display: flex;
+    justify-content: flex-start;
+    width: 35%;
+  }
+
+  .marchandise-img {
+    display: flex;
+    justify-content: center;
+    height: 90px;
+    width: auto;
+  }
+
+  .marchandise-name {
+    display: flex;
+    justify-content: center;
+    width: 35%;
+  }
+
+  /* ページャー */
+  .Pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: scale(0.5, 0.5);
+  }
+  .Pagination-Item-Link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 45px;
+    height: 45px;
+    background: #fff;
+    border: solid 2px rgba(80, 80, 80, 1);
+    font-size: 14px;
+    color: rgba(80, 80, 80, 1);
+    font-weight: bold;
+    transition: all 0.15s linear;
+  }
+  .Pagination-Item-Link-Icon {
+    width: 20px;
+  }
+  .Pagination-Item-Link.isActive {
+    background: #111;
+    color: #fff;
+    pointer-events: none;
+  }
+  .Pagination-Item-Link:not(.isActive):hover {
+    background: #111;
+    color: #fff;
+  }
+  .Pagination > * + * {
+    margin-left: 12px;
+  }
+
+  /* page6 */
+  .marchandise-img-section {
+    display: flex;
+    justify-content: center;
+  }
+
+  .menu-description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    background-color: rgba(206, 181, 173, 1);
+    margin-top: 10px;
+  }
+
+  .menu-description-title {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 80%;
+    height: auto;
+  }
+
+  .menu-text {
+    display: flex;
+    justify-content: center;
+    /* text-align: center; */
+    width: 75%;
+    line-height: 30px;
+  }
+}

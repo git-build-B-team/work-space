@@ -1,0 +1,135 @@
+@use "sass:map";
+
+$breakpoints: (
+  "sp": "screen and (max-width: 767px)",
+  "tb": "screen and (min-width: 768px) and (max-width: 1024px)",
+  "pc": "screen and (min-width: 768px)",
+) !default;
+
+@mixin mq($breakpoint: pc) {
+  @media #{map.get($breakpoints, $breakpoint)} {
+    @content;
+  }
+}
+
+body {
+  font-family: 'Noto Sans JP','Montserrat', sans-serif;
+}
+
+.header {
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    height: 70px;
+  }
+
+  &__logo {
+    width: 112px;
+    display: block;
+  }
+
+  &__title {
+
+  }
+
+  &__nav {
+    
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+  }
+
+  &__item {
+    & + & {
+      margin-left: 32px;
+    }
+  }
+
+  &__link {
+
+  }
+}
+
+.food {
+  &__list {
+    display: grid;
+    gap: 1rem;
+    width: calc(100% - 2rem);
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    margin: 0 auto;
+    max-width: 1230px;
+    justify-items: center;
+  }
+  
+  &__item {
+    width: 300px;
+  }
+
+  &__item-img {
+    margin-bottom: 12px;
+    width: 300px;
+
+    img {
+      box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+    }
+  }
+
+  &__item-name {
+    font-weight: 700;
+    margin-bottom: 6px;
+  }
+
+  &__item-price {
+    font-size: 14px;
+  }
+}
+
+.sweets {
+  .sweets__list {
+    display: grid;
+    gap: 1rem;
+    width: calc(100% - 2rem);
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    margin: 0 auto;
+    max-width: 1230px;
+    justify-items: center;
+  }
+  
+  &__item {
+    
+  }
+  
+  &__item-img {
+    margin-bottom: 12px;
+    width: 300px;
+
+    img {
+      box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.15);
+    }
+  }
+  
+  &__item-name {
+    font-weight: 700;
+    margin-bottom: 6px;
+  }
+  
+  &__item-price {
+    font-size: 14px;
+  }
+}
+
+.section {
+  padding: 48px 0;
+
+  &__inner {
+    padding: 0 32px;
+  }
+
+  &__contents {
+
+  }
+}
