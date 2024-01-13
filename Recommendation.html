@@ -2,29 +2,34 @@
 <html lang="ja">
   <head>
     <meta charset="UTF-8" />
-    <!-- レスポンシブ -->
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <!-- FontAwesomeの読み込み -->
-    <script src="https://kit.fontawesome.com/a90a8e4730.js" crossorigin="anonymous"></script>
+    
     <!-- CSSファイルの読み込み -->
     <link rel="stylesheet" href="styleo.css" />
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
     <title>cafe recursion</title>
   </head>
 
   <body>
     <!-- header -->
-    <header>
-      <header class="header">
-        <img src="img/logo.png" alt="" class="logo">
-        <div class="nav">
-            <ul>
+    <header class="header">
+      <img src="img/logo.png" alt="" class="logo">
+      <!-- グローバルナビ -->
+      <div class="openbtn"><span></span><span></span><span></span></div>
+      <nav id="nav">
+          <ul>
               <a href="index.html"><li>home</li></a>
               <a href="drink.html"><li>drink</li></a>
               <a href="sweets.html"><li>sweets</li></a>
               <a href="food.html"><li>food</li></a>
               <a href="page5.html"><li>info</li></a>
-            </ul>
-        </div>
+          </ul>
+      </nav>
     </header>
       <div class="social">
         <i class="fab fa-facebook-square"></i>
@@ -57,7 +62,7 @@
             <img class="blog-image" src="img/cafe8.jpg" />
             <section class="blog-text">
               <h3 class="blog-text-heading">
-                <a href="single.html">
+                <a href="blend.html">
                   『ブレンドコーヒー』<br />
                   香り際立つ<br />
                   キレとコク
@@ -169,7 +174,9 @@
 
     <!-- footer -->
     <footer>
-      <p class="footer-text">cafe recursion</p>
+      <p class="copylight">© 2022 Cafe Recursion. All Rights Reserved.</p>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="style.js"></script>
   </body>
 </html>

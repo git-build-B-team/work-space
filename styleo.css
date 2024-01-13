@@ -16,9 +16,9 @@
   }
   
   .header {
+    line-height: 80px;
     display: flex;
     justify-content: space-between;
-    padding: 10px 0;
     background-color: rgba(206, 181, 173, 1);
 }
 
@@ -210,73 +210,187 @@ li {
   .footer-text {
     color: #fff;
   }
-
-
-  @media screen and (max-width: 425px) {
-    header {
-      width: 100%;
-    }
-  
-    .nav-list {
-      width: 100%;
-    }
-  
-    .nav-list-item {
-      width: 100%;
-      margin: 0 0 10px 0;
-    }
-  
-    .social {
-      display: none;
-    }
-  
-    .main-visual-content {
-      width: 100%;
-    }
-  
-    main {
-      width: 100%;
-      display: block;
-    }
-  
-    .blog {
-      width: 100%;
-      margin: 0;
-    }
-  
-    .blog-box {
-      padding-left: 2%;
-      padding-right: 2%;
-    }
-  
-    .blog-image {
-      width: 49%;
-    }
-  
-    .blog-text {
-      width: 49%;
-      padding-top: 5px;
-    }
-  
-    .sidebar {
-      width: 100%;
-    }
-  
-    .sidebar-contents {
-      padding-left: 3%;
-      padding-right: 3%;
-    }
-  
-    .instagram-box {
-      width: 48%;
-      padding-top: 48%;
-    }
-  
-    .instagram-box:nth-child(odd) {
-      margin-right: 4%;
-    }
-  
-    .pagination {
-      margin-bottom: 50px;
-    }
+/* SP */
+@media screen and (max-width: 960px) {
+  header {
+    width: 100%;
   }
+
+  .nav-list {
+    width: 100%;
+  }
+
+  .nav-list-item {
+    width: 100%;
+    margin: 0 0 10px 0;
+  }
+
+  .social {
+    display: none;
+  }
+
+  .main-visual-content {
+    width: 100%;
+  }
+
+  main {
+    width: 100%;
+    display: block;
+  }
+
+  .blog {
+    width: 100%;
+    margin: 0;
+  }
+
+  .blog-box {
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+
+  .blog-image {
+    width: 49%;
+  }
+
+  .blog-text {
+    width: 49%;
+    padding-top: 5px;
+  }
+
+  .sidebar {
+    width: 100%;
+  }
+
+  .sidebar-contents {
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+
+  .instagram-box {
+    width: 48%;
+    padding-top: 48%;
+  }
+
+  .instagram-box:nth-child(odd) {
+    margin-right: 4%;
+  }
+
+  .pagination {
+    margin-bottom: 50px;
+  }
+  /* ハンバーガー目ニュー */
+  #nav{
+      /*position:fixed;にし、z-indexの数値を大きくして前面へ*/
+      position:fixed;
+      z-index: 999;
+      /*ナビのスタート位置と形状*/
+      top:0;
+      right: -120%;
+      width:30%;
+      height: 70%;
+      background:#999;
+      /*動き*/
+      transition: all 0.6s;
+      opacity: 0.9;
+  }
+  
+  #nav.panelactive{
+      right: 0;
+  }
+  
+  /*ナビゲーション*/
+  #nav ul {
+      /*ナビゲーション天地中央揃え*/
+      position: absolute;
+      z-index: 999;
+      top:50%;
+      left:50%;
+      transform: translate(-50%,-50%);
+      flex-direction: column;
+  }
+  
+  /*リストのレイアウト設定*/
+  
+  #nav li{
+      list-style: none;
+      text-align: center;
+  }
+  
+  #nav li {
+      color: #ffffff;
+      padding:15px;
+      display: block;
+      letter-spacing: 0.1em;
+      font-weight: bold;
+  }
+  
+  /*========= ボタンのためのCSS ===============*/
+  .openbtn{
+      position:fixed;
+      z-index: 9999;/*ボタンを最前面に*/
+      top:10px;
+      right: 10px;
+      cursor: pointer;
+      width: 60px;
+      height:50px;
+      top:25px;
+  }
+      
+  /*×に変化*/	
+  .openbtn span{
+      display: inline-block;
+      transition: all .4s;
+      position: absolute;
+      left: 14px;
+      height: 3px;
+      border-radius: 2px;
+      background-color: #666;
+        width: 45%;
+    }
+  
+  .openbtn span:nth-of-type(1) {
+      top:15px;	
+  }
+  
+  .openbtn span:nth-of-type(2) {
+      top:23px;
+  }
+  
+  .openbtn span:nth-of-type(3) {
+      top:31px;
+  }
+  
+  .openbtn.active span:nth-of-type(1) {
+      top: 18px;
+      left: 18px;
+      transform: translateY(6px) rotate(-45deg);
+      width: 30%;
+  }
+  
+  .openbtn.active span:nth-of-type(2) {
+      opacity: 0;
+  }
+  
+  .openbtn.active span:nth-of-type(3){
+      top: 30px;
+      left: 18px;
+      transform: translateY(-6px) rotate(45deg);
+      width: 30%;
+  }
+
+  /* コンテンツ縦並び */
+  .wrap {
+      flex-direction: column;
+  }
+
+  /* フォントサイズ調整 */
+
+  .text {
+      font-size: 12px;
+  }
+
+  .greeting {
+      font-size: 5vw;
+  }
+
+}
