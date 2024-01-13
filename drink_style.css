@@ -2,6 +2,10 @@ body {
     margin: 0;
 }
 
+header,h1,h2,footer{
+    font-family: 'Snell Roundhand','Snell Roundhand','Snell Roundhand','Snell Roundhand','Snell Roundhand',sans-serif;
+}
+
 .header {
     display: flex;
     justify-content: space-between;
@@ -71,6 +75,9 @@ li {
     width: 15rem;
 }
 
+.copylight {
+    text-align: center;
+}
 /* SP */
 @media screen and (max-width: 960px) {
 
