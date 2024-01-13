@@ -80,15 +80,23 @@
     </a>
     </div>
     <div class="fotunebox">
-		<p>cafe 占い</p>
+		<h2>カフェ 占い</h2>
 		<p>今日のラッキードリンクは</p>
-		<script>
-			let omikuji = ["ホットココア","エスプレッソ","エスプレッソフローズン","ほっと抹茶ラテ","アイスコーヒー","アイスカフェラテ","アイス抹茶ラテ","ピスタチオハニーラテ","ティー"];
-			let r = Math.floor( Math.random() * omikuji.length);
-			document.write(omikuji[r]);
-		</script>
-		<button id="btn">占う</button>
-		<div class="omikuji"></div>
+        <button class="omikuji_btn" onclick="Omikuji();">占う</button>
+        <p id="omikujikekka"></p>
+<script>
+
+function Omikuji() {
+
+let omikuji = ["ホットココア","エスプレッソ","エスプレッソフローズン","ほっと抹茶ラテ","アイスコーヒー","アイスカフェラテ","アイス抹茶ラテ","ピスタチオハニーラテ","ティー"];
+
+let r = Math.floor( Math.random() * omikuji.length) ;
+document.getElementById("omikujikekka").innerHTML = omikuji[r];
+
+}
+
+</script>
+
 	</div>
 
     <footer>
