@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    
+    <!-- CSSファイルの読み込み -->
+    <link rel="stylesheet" href="styleo.css" />
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <title>cafe recursion</title>
+  </head>
+
+  <body>
+    <!-- header -->
+    <header class="header">
+      <img src="img/logo.png" alt="" class="logo">
+      <!-- グローバルナビ -->
+      <div class="openbtn"><span></span><span></span><span></span></div>
+      <nav id="nav">
+          <ul>
+              <a href="index.html"><li>home</li></a>
+              <a href="drink.html"><li>drink</li></a>
+              <a href="sweets.html"><li>sweets</li></a>
+              <a href="food.html"><li>food</li></a>
+              <a href="page5.html"><li>info</li></a>
+          </ul>
+      </nav>
+    </header>
+      <div class="social">
+        <i class="fab fa-facebook-square"></i>
+        <i class="fab fa-twitter-square"></i>
+        <i class="fab fa-instagram"></i>
+      </div>
+    </header>
+
+    <!-- main-visual用のdiv -->
+    <div class="main-visual">
+      <div class="main-visual-content">
+        <p class="main-visual-text">
+          こちらは当店自慢の<br />
+          おすすめメニューページになります。<br />
+          必ずお気に召されるメニューに出会えると<br />
+          信じております。
+        </p>
+        <p class="main-visual-name">
+          店主
+        </p>
+      </div>
+    </div>
+
+    <!-- main用のdiv -->
+    <main>
+      <section class="blog">
+        <h2 class="blog-heading">おすすめメニュー</h2>
+        <div class="blog-box">
+          <div class="blog-item">
+            <img class="blog-image" src="img/cafe8.jpg" />
+            <section class="blog-text">
+              <h3 class="blog-text-heading">
+                <a href="blend.html">
+                  『ブレンドコーヒー』<br />
+                  香り際立つ<br />
+                  キレとコク
+                </a>
+              </h3>
+              <span class="category">coffee</span>
+            </section>
+          </div>
+          <div class="blog-item">
+            <img class="blog-image" src="img/cafe9.jpg" />
+            <section class="blog-text">
+              <h3 class="blog-text-heading">
+                <a href="single.html">
+                  『ティラミス』<br />
+                  自家製クリームの甘さと<br />
+                  ココアパウダーの苦味が<br />
+                  絶妙にマッチ
+                </a>
+              </h3>
+              <span class="category">cake</span>
+            </section>
+          </div>
+          <div class="blog-item">
+            <img class="blog-image" src="img/cafe10.jpg" />
+            <section class="blog-text">
+              <h3 class="blog-text-heading">
+                <a href="single.html">
+                  『ミートボールパスタ』<br />
+                  ミートボールとソースが<br />
+                  奏でるハーモニー
+                </a>
+              </h3>
+              <span class="category">food
+              </span>
+            </section>
+          </div>
+          <div class="blog-item">
+            <img class="blog-image" src="img/cafe11.jpg" />
+            <section class="blog-text">
+              <h3 class="blog-text-heading">
+                <a href="single.html">
+                  『ベリースムージー』<br />
+                  季節の果物を使用した<br />
+                  ジューシーなスムージー
+                </a>
+              </h3>
+              <span class="category">smoothie</span>
+            </section>
+          </div>
+          <div class="blog-item">
+            <img class="blog-image" src="img/cafe12.jpg" />
+            <section class="blog-text">
+              <h3 class="blog-text-heading">
+                <a href="single.html">
+                  『ドリップコーヒー』<br />
+                  丁寧にドリップしたコーヒー
+                </a>
+              </h3>
+              <span class="category">coffee</span>
+            </section>
+          </div>
+        </div>
+        <div class="pagination">
+          <p><<</p>
+          <p><</p>
+          <p>1</p>
+          <p>2</p>
+          <p>3</p>
+          <p>></p>
+          <p>>></p>
+        </div>
+      </section>
+      <div class="sidebar">
+        <section class="popular">
+          <h2 class="sidebar-heading common-heading">人気の秘密</h2>
+          <div class="sidebar-contents">
+            <p class="popular-text">
+              本格的なコーヒーや食事、<br />スイーツを楽しめるカフェを<br />
+
+              目指して素材からこだわる<br />だけでなく、食材一つ一つ
+              <br />に一手間を加えることで<br />
+
+              芳醇な香りのコーヒー<br />食欲を掻き立てるフード<br />
+              甘く癒すスイーツを<br />ご提供させていただきます。
+            </p>
+          </div>
+        </section>
+        <section class="instagram">
+          <h2 class="instagram-heading common-heading">Instagram</h2>
+          <div class="sidebar-contents">
+            <div class="instagram-box"></div>
+            <div class="instagram-box"></div>
+            <div class="instagram-box"></div>
+            <div class="instagram-box"></div>
+            <div class="instagram-box"></div>
+            <div class="instagram-box"></div>
+          </div>
+        </section>
+        <section class="categories">
+          <h2 class="categories-heading common-heading">Categories</h2>
+          <div class="sidebar-contents">
+            <p class="categories-text">フード(15)</p>
+            <p class="categories-text"> ドリンク(20)</p>
+            <p class="categories-text">スイーツ(12)</p>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <!-- footer -->
+    <footer>
+      <p class="copylight">© 2022 Cafe Recursion. All Rights Reserved.</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="style.js"></script>
+  </body>
+</html>
