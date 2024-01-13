@@ -79,6 +79,17 @@
         </div>
     </a>
     </div>
+    <div class="fotunebox">
+		<p>cafe 占い</p>
+		<p>今日のラッキードリンクは</p>
+		<script>
+			let omikuji = ["ホットココア","エスプレッソ","エスプレッソフローズン","ほっと抹茶ラテ","アイスコーヒー","アイスカフェラテ","アイス抹茶ラテ","ピスタチオハニーラテ","ティー"];
+			let r = Math.floor( Math.random() * omikuji.length);
+			document.write(omikuji[r]);
+		</script>
+		<button id="btn">占う</button>
+		<div class="omikuji"></div>
+	</div>
 
     <footer>
         <p class="copylight">© 2022 Cafe Recursion. All Rights Reserved.</p>
