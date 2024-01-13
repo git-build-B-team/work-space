@@ -3,129 +3,147 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- 検索にヒットさせない -->
-  <meta name="robots" content="noindex">
   <title>Document</title>
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
-  <!-- style sheet -->
-  <link rel="stylesheet" href="reset.css">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-  <!-- <header class="header">
-    <img src="./img/logo .png" alt="" class="logo">
-    <div class="nav">
-        <ul>
-          <a href="#"><li>home</li></a>
-          <a href="drink.html"><li>drink</li></a>
-          <a href="ssweets.html"><li>sweets</li></a>
-          <a href="food.html"><li>food</li></a>
-          <a href="#"><li>info</li></a>
+  <header class="header">
+    <div class="header__inner">
+      <a href="#" class="header__logo">
+        <h1 class="header__title">
+          <img src="./img/logo.png" alt="logo">
+        </h1>
+      </a>
+      <nav class="header__nav">
+        <ul class="header__list">
+          <li class="header__item">
+            <a href="index.html" class="header__link">home</a>
+          </li>
+          <li class="header__item">
+            <a href="drink.html" class="header__link">drink</a>
+          </li>
+          <li class="header__item">
+            <a href="sweets.html" class="header__link">sweets</a>
+          </li>
+          <li class="header__item">
+            <a href="food.html" class="header__link">food</a>
+          </li>
+          <li class="header__item">
+            <a href="" class="header__link">information</a>
+          </li>
         </ul>
+      </nav>
+
+      <div class="drawer">
+        <div class="drawer__icon-area">
+          <input id="drawer-checkbox" class="drawer__checkbox" type="checkbox">
+          <label id="drawer-icon" for="drawer-checkbox" class="drawer__icon"><span class="drawer__bar"></span></label>
+          <label id="drawer-close" for="drawer-checkbox"></label>
+        </div>
+        <div id="drawer-content" class="drawer__content">
+          <div class="drawer__inner">
+            <nav class="drawer__nav">
+              <ul class="drawer__list">
+                <li class="drawer__item">
+                  <a href="#" class="drawer__link">home</a>
+                </li>
+                <li class="drawer__item">
+                  <a href="#" class="drawer__link">drink</a>
+                </li>
+                <li class="drawer__item">
+                  <a href="#" class="drawer__link">food</a>
+                </li>
+                <li class="drawer__item">
+                  <a href="#" class="drawer__link">sweets</a>
+                </li>
+                <li class="drawer__item">
+                  <a href="#" class="drawer__link">information</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
     </div>
-</header> -->
+  </header>
 
-<header class="header">
-  <div class="header__inner">
-    <a href="#" class="header__logo">
-      <h1 class="header__title">
-        <img src="./img/logo.png" alt="logo">
-      </h1>
-    </a>
-    <nav class="header__nav">
-      <ul class="header__list">
-        <li class="header__item">
-          <a href="index.html" class="header__link">home</a>
-        </li>
-        <li class="header__item">
-          <a href="drink.html" class="header__link">drink</a>
-        </li>
-        <li class="header__item">
-          <a href="sweets.html" class="header__link">sweets</a>
-        </li>
-        <li class="header__item">
-          <a href="food.html" class="header__link">food</a>
-        </li>
-        <li class="header__item">
-          <a href="page5.html" class="header__link">info</a>
-        </li>
-      </ul>
-    </nav>
-  </div>
-</header>
+  <section class="grand__menu">
+    <div class="grand__menu-container">
+      <h2 class="grand__menu-head">
+        <span class="grand__menu-title--en">GRAND MENU</span>
+        <span class="grand__menu-title--ja">グランドメニュー</span>
+      </h2>
+      <div class="grand__menu-body">
+        <section class="menu__block">
+          <h3 class="menu__block-head">パン & スイーツ</h3>
+          <div class="menu__block-body">
+            <ul class="menu__block-list">
+              <li class="menu__block-item">
+                <div class="menu__card-img">
+                  <img src="./img/img_sweets1.png" alt="">
+                </div>
+                <div class="menu__card-body">
+                  <p class="menu__card-name">○○○○サンド</p>
+                  <p class="menu__card-price">780 yen</p>
+                </div>
+              </li>
+              <li class="menu__block-item">
+                <div class="menu__card-img">
+                  <img src="./img/img_sweets1.png" alt="">
+                </div>
+                <div class="menu__card-body">
+                  <p class="menu__card-name">○○○○サンド</p>
+                  <p class="menu__card-price">780 yen</p>
+                </div>
+              </li>
+              <li class="menu__block-item">
+                <div class="menu__card-img">
+                  <img src="./img/img_sweets1.png" alt="">
+                </div>
+                <div class="menu__card-body">
+                  <p class="menu__card-name">○○○○サンド</p>
+                  <p class="menu__card-price">780 yen</p>
+                </div>
+              </li>
+              <li class="menu__block-item">
+                <div class="menu__card-img">
+                  <img src="./img/img_sweets1.png" alt="">
+                </div>
+                <div class="menu__card-body">
+                  <p class="menu__card-name">○○○○サンド</p>
+                  <p class="menu__card-price">780 yen</p>
+                </div>
+              </li>
+              <li class="menu__block-item">
+                <div class="menu__card-img">
+                  <img src="./img/img_sweets1.png" alt="">
+                </div>
+                <div class="menu__card-body">
+                  <p class="menu__card-name">○○○○サンド</p>
+                  <p class="menu__card-price">780 yen</p>
+                </div>
+              </li>
+              <li class="menu__block-item">
+                <div class="menu__card-img">
+                  <img src="./img/img_sweets1.png" alt="">
+                </div>
+                <div class="menu__card-body">
+                  <p class="menu__card-name">○○○○サンド</p>
+                  <p class="menu__card-price">780 yen</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </div>
+    </div>
+  </section>
 
-  <main class="main">
-    <section class="section__contents">
-      <ul class="sweets__list">
-        <li class="sweets__item">
-          <div class="sweets__item-img">
-            <img src="./img/sweets.png" alt="">
-          </div>
-          <p class="sweets__item-name">商品名</p>
-          <p class="sweets__item-price">価格</p>
-        </li>
-        <li class="sweets__item">
-          <div class="sweets__item-img">
-            <img src="./img/sweets.png" alt="">
-          </div>
-          <p class="sweets__item-name">商品名</p>
-          <p class="sweets__item-price">価格</p>
-        </li>
-        <li class="sweets__item">
-          <div class="sweets__item-img">
-            <img src="./img/sweets.png" alt="">
-          </div>
-          <p class="sweets__item-name">商品名</p>
-          <p class="sweets__item-price">価格</p>
-        </li>
-        <li class="sweets__item">
-          <div class="sweets__item-img">
-            <img src="./img/sweets.png" alt="">
-          </div>
-          <p class="sweets__item-name">商品名</p>
-          <p class="sweets__item-price">価格</p>
-        </li>
-        <li class="sweets__item">
-          <div class="sweets__item-img">
-            <img src="./img/sweets.png" alt="">
-          </div>
-          <p class="sweets__item-name">商品名</p>
-          <p class="sweets__item-price">価格</p>
-        </li>
-        <li class="sweets__item">
-          <div class="sweets__item-img">
-            <img src="./img/sweets.png" alt="">
-          </div>
-          <p class="sweets__item-name">商品名</p>
-          <p class="sweets__item-price">価格</p>
-        </li>
-        <li class="sweets__item">
-          <div class="sweets__item-img">
-            <img src="./img/sweets.png" alt="">
-          </div>
-          <p class="sweets__item-name">商品名</p>
-          <p class="sweets__item-price">価格</p>
-        </li>
-        <li class="sweets__item">
-          <div class="sweets__item-img">
-            <img src="./img/sweets.png" alt="">
-          </div>
-          <p class="sweets__item-name">商品名</p>
-          <p class="sweets__item-price">価格</p>
-        </li>
-        <li class="sweets__item">
-          <div class="sweets__item-img">
-            <img src="./img/sweets.png" alt="">
-          </div>
-          <p class="sweets__item-name">商品名</p>
-          <p class="sweets__item-price">価格</p>
-        </li>
-      </ul>
-    </section>
-  </main>
+  <footer class="footer">
+    <div class="footer__container">
+      <small class="footer__copyright-text">&copy; 2022 Cafe Recursion. All Rights Reserved.</small>
+    </div>
+  </footer>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <script src="./js/script.js"></script>
