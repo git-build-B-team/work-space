@@ -21,58 +21,94 @@
           <a href="page5.html"><li>info</li></a>
         </ul>
       </div>
+      <div class="sp-menu">
+        <input type="checkbox" id="sp-menu__check">
+        <label for="sp-menu__check" class="sp-menu__box">
+          <span></span>
+        </label>
+        <div class="sp-menu__content">
+          <ul class="sp-menu__list">
+            <li class="sp-menu__item">
+              <a class="sp-menu__link" href="index.html">home</a>
+            </li>
+            <li class="sp-menu__item">
+              <a class="sp-menu__link" href="drink.html">drink</a>
+            </li>
+            <li class="sp-menu__item">
+              <a class="sp-menu__link" href="sweets.html">sweets</a>
+            </li>
+            <li class="sp-menu__item">
+              <a class="sp-menu__link" href="food.html">food</a>
+            </li>
+            <li class="sp-menu__item">
+              <a class="sp-menu__link" href="page5.html">info</a>
+            </li>
+          </ul>
+        </div>
+      </div>
   </header>
 
   <main>
     <!-- コンテンツタイトル -->
     <div class="contents-title">
-      <h1>インフォメーション</h1>
+      <h1>Infometion</h1>
     </div>
     
     <!--商品情報セクション  -->
     <div class="marchandise-section">
       <div class="marchandise-content">
         <div class="release-date">
-          <h2>⚪︎⚪︎/⚪︎⚪︎/⚪︎⚪︎</h2>
+          <h2 class="sp-font">⚪︎⚪︎/⚪︎⚪︎/⚪︎⚪︎</h2>
+        </div>
+        <div class="marchandise-img">
+          <img src="img/cake_3.jpeg" alt="">
+        </div>
+        <div class="marchandise-name">
+          <a class="sp-font" href="page6.html">フルーツパイ</a>
+        </div>
+      </div>
+      <div class="marchandise-content">
+        <div class="release-date">
+          <h2 class="sp-font">⚪︎⚪︎/⚪︎⚪︎/⚪︎⚪︎</h2>
         </div>
         <div class="marchandise-img">
           <img src="img/apple-pie-5479993_1280.jpg" alt="">
         </div>
         <div class="marchandise-name">
-          <a href="page6.html">アップルパイ</a>
+          <a class="sp-font" href="page6.html">アップルパイ</a>
         </div>
       </div>
       <div class="marchandise-content">
         <div class="release-date">
-          <h2>⚪︎⚪︎/⚪︎⚪︎/⚪︎⚪︎</h2>
+          <h2 class="sp-font">⚪︎⚪︎/⚪︎⚪︎/⚪︎⚪︎</h2>
         </div>
         <div class="marchandise-img">
           <img src="img/cake-1284548_1280.jpg">
         </div>
         <div class="marchandise-name">
-          <a href="page6.html">ケーキ</a>
+          <a class="sp-font" href="page6.html">ケーキ</a>
         </div>
       </div>
       <div class="marchandise-content">
         <div class="release-date">
-          <h2>⚪︎⚪︎/⚪︎⚪︎/⚪︎⚪︎</h2>
+          <h2 class="sp-font">⚪︎⚪︎/⚪︎⚪︎/⚪︎⚪︎</h2>
         </div>
         <div class="marchandise-img">
           <img src="img/coffee-2151200_1280.jpg" alt="">
         </div>
         <div class="marchandise-name">
-          <a href="page6.html">コーヒー</a>
+          <a class="sp-font" href="page6.html">コーヒー</a>
         </div>
       </div>
       <div class="marchandise-content">
         <div class="release-date">
-          <h2>⚪︎⚪︎/⚪︎⚪︎/⚪︎⚪︎</h2>
+          <h2 class="sp-font">⚪︎⚪︎/⚪︎⚪︎/⚪︎⚪︎</h2>
         </div>
         <div class="marchandise-img">
           <img src="img/pancakes-5989136_1280.jpg" alt="">
         </div>
         <div class="marchandise-name">
-          <a href="page6.html">パンケーキ</a>
+          <a class="sp-font" href="page6.html">パンケーキ</a>
         </div>
       </div>
     </div>
@@ -88,10 +124,10 @@
       </a>
     </li>
     <li class="Pagination-Item">
-      <a class="Pagination-Item-Link" href="/pages/1/"><span>1</span></a>
+      <a class="Pagination-Item-Link isActive" href="/pages/1/"><span>1</span></a>
     </li>
     <li class="Pagination-Item">
-      <a class="Pagination-Item-Link isActive" href="/pages/2/"><span>2</span></a>
+      <a class="Pagination-Item-Link" href="/pages/2/"><span>2</span></a>
     </li>
     <li class="Pagination-Item">
       <a class="Pagination-Item-Link" href="/pages/3/"><span>3</span></a>
@@ -110,5 +146,12 @@
       </a>
     </li>
   </ul>
+
+  <!-- フッター -->
+  <footer class="footer">
+    <div>
+      <p>© 2022 Cafe Recursion. All Rights Reserved.</p>
+    </div>
+  </footer>
 </body>
 </html>
