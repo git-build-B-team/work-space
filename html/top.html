@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="top_style.css">
+    <link rel="stylesheet" href="../css/top_style.css">
 
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
@@ -15,7 +15,7 @@
 </head>
 <body>
     <header class="header">
-        <img src="img/logo.png" alt="" class="logo">
+        <img src="../img/logo.png" alt="" class="logo">
         <!-- グローバルナビ -->
         <div class="openbtn"><span></span><span></span><span></span></div>
         <nav id="nav">
@@ -24,7 +24,7 @@
                 <a href="drink.html"><li>drink</li></a>
                 <a href="sweets.html"><li>sweets</li></a>
                 <a href="food.html"><li>food</li></a>
-                <a href="page5.html"><li>info</li></a>
+                <a href="info.html"><li>info</li></a>
             </ul>
         </nav>
 
@@ -34,9 +34,9 @@
     
     <div class="main-visual">
     <div class="slider">
-        <div><img src="img/cake_1.jpg" alt=""></div>
-        <div><img src="img/food.jpg" alt=""></div>
-        <div><img src="img/coffee.jpg" alt=""></div>
+        <div><img src="../img/cake_1.jpg" alt=""></div>
+        <div><img src="../img/food.jpg" alt=""></div>
+        <div><img src="../img/coffee.jpg" alt=""></div>
     </div>
 </div>
     
@@ -51,7 +51,7 @@
     <h1 class="greeting">Welcome to cafe recrsion</h1>
 
     <div class="wrap">
-        <a href="page5.html">
+        <a href="#">
             <div class="card">
             <h2>What's New?</h2>
             <div class="inner">
@@ -59,13 +59,13 @@
                 <p class="text">春の新メニュー「フルーツパイ」をご用意しました。<br>新鮮なフルーツと生クリームのハーモニーをお楽しみください。</p>
             </div>
                 
-                <img src="img/cake_3.jpeg" alt="" class="img">
+                <img src="../img/cake_3.jpeg" alt="" class="img">
             
             </div>
         </div>
     </a>
 
-    <a href="Recommendation.html">
+    <a href="#">
         <div class="card">
             <h2>Recommendation</h2>
             <div class="inner">
@@ -73,31 +73,12 @@
                 <p class="text">今月のお薦めは「ラムダブレンド」。<br>やや苦みのある上品な香りのコーヒーです。</p>
             </div>
                 
-                <img src="img/mame.jpeg" alt="" class="img" >
+                <img src="../img/mame.jpeg" alt="" class="img" >
             
             </div>
         </div>
     </a>
     </div>
-    <div class="fotunebox">
-		<h2>カフェ 占い</h2>
-		<p>今日のラッキードリンクは</p>
-        <button class="omikuji_btn" onclick="Omikuji();">占う</button>
-        <p id="omikujikekka"></p>
-<script>
-
-function Omikuji() {
-
-let omikuji = ["ホットココア","エスプレッソ","エスプレッソフローズン","ほっと抹茶ラテ","アイスコーヒー","アイスカフェラテ","アイス抹茶ラテ","ピスタチオハニーラテ","ティー"];
-
-let r = Math.floor( Math.random() * omikuji.length) ;
-document.getElementById("omikujikekka").innerHTML = omikuji[r];
-
-}
-
-</script>
-
-	</div>
 
     <footer>
         <p class="copylight">© 2022 Cafe Recursion. All Rights Reserved.</p>

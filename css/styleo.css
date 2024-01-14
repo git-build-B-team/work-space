@@ -47,7 +47,7 @@ li {
   .main-visual {
     width: 100%; /* 横幅いっぱい */
     height: 300px; /* 高さ300px */
-    background-image: url(img/cafe1.jpg);
+    background-image: url(../img/cafe1.jpg);
     background-size: cover; /* 縦横比を維持したまま背景領域を埋め尽くす */
     background-position: center; /* 背景画像を中央に配置 */
   }
@@ -181,22 +181,22 @@ li {
     margin-right: 10px;
   }
   .instagram-box:nth-child(1) {
-    background-image: url(img/cafe3.jpg);
+    background-image: url(../img/cafe3.jpg);
   }
   .instagram-box:nth-child(2) {
-    background-image: url(img/cafe2.jpg);
+    background-image: url(../img/cafe2.jpg);
   }
   .instagram-box:nth-child(3) {
-    background-image: url(img/cafe4.jpg);
+    background-image: url(../img/cafe4.jpg);
   }
   .instagram-box:nth-child(4) {
-    background-image: url(img/cafe5.jpg);
+    background-image: url(../img/cafe5.jpg);
   }
   .instagram-box:nth-child(5) {
-    background-image: url(img/cafe6.jpg);
+    background-image: url(../img/cafe6.jpg);
   }
   .instagram-box:nth-child(6) {
-    background-image: url(img/cafe7.jpg);
+    background-image: url(../img/cafe7.jpg);
   }
   
   footer {
