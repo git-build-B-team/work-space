@@ -46,6 +46,10 @@ main {
   width: 100%;
 }
 
+.marchandise-content:hover {
+  opacity: 0.8;
+}
+
 .footer {
   width: 100%;
   height: auto;
@@ -57,7 +61,7 @@ main {
   background-color: rgba(206, 181, 173, 1);
 }
 
-header, nav, h2, footer {
+header, nav, h1, h2, footer {
   /* font-family: Chalkduster, "Bradley Hand", Courier, "Segoe Print", sans-serif; */
   font-family: 'Snell Roundhand','Snell Roundhand','Snell Roundhand','Snell Roundhand','Snell Roundhand',sans-serif;
 }
@@ -300,14 +304,14 @@ header, nav, h2, footer {
     /* 真ん中の線との距離を無くす（真ん中の線と同じ位置にする） */
     bottom: 0;
     /* 右に45度傾けてバツの片側の線にする */
-    transform: rotate(45deg);
+    transform: rotate(-45deg);
   }
   /* 下の線 */
   #sp-menu__check:checked ~ .sp-menu__box span::after {
     /* 真ん中の線との距離を無くす（真ん中の線と同じ位置にする） */
     top: 0;
     /* 左に45度傾けてバツの片側の線にする */
-    transform: rotate(-45deg);
+    transform: rotate(45deg);
   }
 
   /* スマホ用メニュー */
